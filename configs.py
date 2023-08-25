@@ -12,14 +12,14 @@ logging.basicConfig(
 
 
 class Config(object):
-    API_ID = int(os.environ.get("API_ID", ""))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    API_ID = int(os.environ.get("API_ID", "13487236"))
+    API_HASH = os.environ.get("API_HASH", "c869e87de280d98b363fced8e492ab40")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5909532788:AAFrwyrGFcOJdXGl-NgdFVr2ccLyAioQ9T8 ")
     DOWNLOAD_DIR = os.environ.get("DOWNLOAD_DIR", "./downloads")
     LOGGER = logging
-    OWNER_ID = int(os.environ.get("OWNER_ID", 1445283714))
+    OWNER_ID = int(os.environ.get("OWNER_ID", 5491384523))
     PRO_USERS = list(set(int(x) for x in os.environ.get("PRO_USERS", "0").split()))
     PRO_USERS.append(OWNER_ID)
-    MONGODB_URI = os.environ.get("MONGODB_URI", "")
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-100"))
+    MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb+srv://admin:admin@cluster0.iteow9t.mongodb.net/?retryWrites=true&w=majority")
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001929866719"))
     BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", "False"))
